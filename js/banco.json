@@ -1,0 +1,372 @@
+[
+    {
+        "nome": "PyCharm Community Edition",
+        "comando": [
+            "sudo snap install pycharm-community --classic",
+            "sudo snap install pycharm-community --candidate --classic",
+            "sudo snap install pycharm-community --beta --classic",
+            "sudo snap install pycharm-community --edge --classic"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2017/11/PyCharmCore256.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2017/12/pycharm_com_general.png"
+        ],
+        "descricao": [
+            "Python IDE para desenvolvedor profissional.",
+            "O PyCharm Community Edition é um IDE gratuito e de código aberto que é perfeito para codificação Python pura. Para desenvolvimento profissional na Web e Científico, consulte PyCharm Professional Edition."
+        ],
+        "categoria": [
+            "desenvolvimento",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "Atom",
+        "comando": [
+            "sudo snap install atom --classic",
+            "sudo snap install atom --beta --classic",
+            "sudo snap install atom --edge --classic"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2017/04/atom-256px.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2017/09/Screenshot_from_2017-09-05_11-04-21.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2017/09/Screenshot_from_2017-09-05_11-10-55.png"
+        ],
+        "descricao": [
+            "Um editor de texto haqueavel para o século XXI.",
+            "Atom é um editor de texto livre e de código aberto que é moderno, acessível e hackable ao núcleo. Esse snap é mantido pela comunidade Snapcrafters e não é necessariamente endossado ou mantido oficialmente pelos desenvolvedores upstream."
+        ],
+        "categoria": [
+            "desenvolvimento",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "Notepad++",
+        "comando": [
+            "sudo snap install notepad-plus-plus",
+            "sudo snap install notepad-plus-plus --edge"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2018/02/notepad-plus-plus.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2018/04/screenshot.png"
+        ],
+        "descricao": [
+            "O Notepad ++ é um editor de código fonte gratuito.",
+            "Baseado no poderoso componente de edição Scintilla, notepad-plus-plus é escrito em C ++ e usa API Win32 pura e STL, o que garante uma maior velocidade de execução e tamanho de programa menor. Ao otimizar o máximo de rotinas possíveis sem perder a facilidade de uso, o Notepad-plus-plus está tentando reduzir as emissões mundiais de dióxido de carbono. Ao usar menos energia da CPU, o PC pode reduzir o consumo e reduzir o consumo de energia, resultando em um ambiente mais verde."
+        ],
+        "categoria": [
+            "desenvolvimento",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "Android Studio",
+        "comando": [
+            "sudo snap install android-studio --classic",
+            "sudo snap install android-studio --beta --classic",
+            "sudo snap install android-studio --edge --classic"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2018/03/rsz_android_studio_icon.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2018/03/android-studio.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2019/04/Screenshot_20190418_002828.png"
+        ],
+        "descricao": [
+            "A IDE para android.",
+            "O Android Studio oferece as ferramentas mais rápidas para criar aplicativos em todos os tipos de dispositivos Android. Edição de código de classe mundial, depuração, ferramentas de desempenho, um sistema de criação flexível e um sistema instantâneo de criação / implantação permitem que você se concentre na criação de aplicativos exclusivos e de alta qualidade. Esse snap é mantido pela comunidade Snapcrafters e não é necessariamente endossado ou mantido oficialmente pelos desenvolvedores upstream."
+        ],
+        "categoria": [
+            "desenvolvimento",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "PhpStorm",
+        "comando": [
+            "sudo snap install phpstorm --classic",
+            "sudo snap install phpstorm --candidate --classic",
+            "sudo snap install phpstorm --beta --classic",
+            "sudo snap install phpstorm --edge --classic"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2017/11/webide.ico_HA9tBL0.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2017/11/Screen_Shot_2017-11-22_at_15.53.42_S8lG3nJ.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2017/11/Screenshot_at_Nov_22_15-56-15_U7g4nys.png"
+        ],
+        "descricao": [
+            "PHP IDE para desenvolvimento.",
+            "PhpStorm é um IDE do PHP que realmente 'pega' seu código. Suporta o PHP 5.3-7.2, fornece prevenção de erros em tempo real, melhor autocompletion e refatoração de código, zero depuração de configuração e um editor estendido de HTML, CSS e JavaScript. PhpStorm está disponível para uma avaliação gratuita de 30 dias. As opções de assinatura mensais e anuais estão disponíveis para empresas e usuários individuais. Saiba mais sobre https://www.jetbrains.com/phpstorm/buy/"
+        ],
+        "categoria": [
+            "desenvolvimento",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "Eclipse",
+        "comando": [
+            "sudo snap install eclipse --classic",
+            "sudo snap install eclipse --beta --classic",
+            "sudo snap install eclipse --edge --classic"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2018/04/electron.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2018/04/Screenshot_from_2018-04-13_18-28-02.png"
+        ],
+        "descricao": [
+            "Plataforma de ferramentas extensível e IDE Java.",
+            ""
+        ],
+        "categoria": [
+            "desenvolvimento",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "Pycharm Pro",
+        "comando": [
+            "sudo snap install pycharm-professional --classic",
+            "sudo snap install pycharm-professional --candidate --classic",
+            "sudo snap install pycharm-professional --beta --classic",
+            "sudo snap install pycharm-professional --edge --classic"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2017/05/pycharm_logo_256.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2017/12/pycharm_pro_general.png"
+        ],
+        "descricao": [
+            "Python IDE para desenvolvedor profissional.",
+            "O Eclipse fornece IDEs e plataformas para quase todos os idiomas e arquiteturas. Somos famosos por nossos IDEs Java IDE, C / C ++, JavaScript e PHP baseados em plataformas extensíveis para criação de IDEs de desktop, Web e nuvem. Essas plataformas oferecem a mais ampla coleção de ferramentas complementares disponíveis para desenvolvedores de software. Esse snap é mantido pela comunidade Snapcrafters e não é necessariamente endossado ou mantido oficialmente pelos desenvolvedores upstream."
+        ],
+        "categoria": [
+            "desenvolvimento",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "IDEA Community",
+        "comando": [
+            "sudo snap install intellij-idea-community --classic",
+            "sudo snap install intellij-idea-community --candidate --classic",
+            "sudo snap install intellij-idea-community --beta --classic",
+            "sudo snap install intellij-idea-community --edge --classic"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2017/10/logo_zjwX5FR.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_1170/https://dashboard.snapcraft.io/site_media/appmedia/2017/09/screenshot_Pm7mWCg.png"
+        ],
+        "descricao": [
+            "IDE de Java capacitado e ergonômico.",
+            "O IntelliJ IDEA Ultimate é um IDE comercial completo para a plataforma JVM. O IntelliJ IDEA fornece todas as ferramentas necessárias para o desenvolvimento produtivo empresarial, web e móvel. IntelliJ IDEA suporta Java, Groovy, Kotlin, Scala, Android, JavaScript, SQL e muitas outras linguagens e frameworks. Ele oferece um preenchimento de código instantâneo e inteligente, análise de código on-the-fly e ferramentas de refatoração confiáveis. Ferramentas de missão crítica, como sistemas integrados de controles de versão e uma ampla variedade de linguagens e estruturas suportadas, estão à mão - sem problemas de plugins. O IntelliJ IDEA Ultimate está disponível para uma avaliação gratuita de 30 dias. As opções de assinatura mensais e anuais estão disponíveis para empresas e usuários individuais. Saiba mais sobre https://www.jetbrains.com/idea/buy/"
+        ],
+        "categoria": [
+            "desenvolvimento",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "Notpadqq",
+        "comando": [
+            "sudo snap install notepadqq",
+            "sudo snap install notepadqq --edge --classic"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2018/02/icon.svg_7Eenexu.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2018/02/screen_edited.png"
+        ],
+        "descricao": [
+            "Um Notepad ++  como editor para Linux.",
+            "Ele ajuda os desenvolvedores fornecendo tudo o que você pode esperar de um editor de texto de propósito geral, como realce de sintaxe para mais de 100 idiomas diferentes, dobragem de código, esquemas de cores, monitoramento de arquivos, seleção múltipla e muito mais. Você pode pesquisar texto usando o poder das expressões regulares. Você pode organizar documentos lado a lado. Você pode usar realce em tempo real para encontrar identificadores próximos em um instante."
+        ],
+        "categoria": [
+            "desenvolvimento",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "Brackets",
+        "comando": [
+            "sudo snap install brackets --classic",
+            "sudo snap install brackets --beta --classic",
+            "sudo snap install brackets --edge --classic"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2017/07/brackets_256.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2017/10/Screenshot_from_2017-10-18_12-32-23.png"
+        ],
+        "descricao": [
+            "Brackets é um moderno editor de código para HTML, CSS e ...",
+            "Brackets é um editor de código aberto para web design e desenvolvimento baseado em tecnologias web, como HTML, CSS e JavaScript. O projeto foi criado e é mantido pela Adobe e é lançado sob uma licença MIT. Esse snap é mantido pela comunidade Snapcrafters e não é necessariamente endossado ou mantido oficialmente pelos desenvolvedores upstream."
+        ],
+        "categoria": [
+            "desenvolvimento",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "IDEA Ultimate",
+        "comando": [
+            "sudo snap install intellij-idea-ultimate --classic",
+            "sudo snap install intellij-idea-ultimate --candidate --classic",
+            "sudo snap install intellij-idea-ultimate --beta --classic",
+            "sudo snap install intellij-idea-ultimate --edge --classic"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2017/11/icon_CE_256_2Qe5uEl.png"
+        ],
+        "descricao": [
+            "IDE Java Capable & Ergonomic para Desenvolvimento Empresarial, Web e Móvel",
+            "O IntelliJ IDEA Ultimate é um IDE comercial completo para a plataforma JVM. O IntelliJ IDEA fornece todas as ferramentas necessárias para o desenvolvimento produtivo empresarial, web e móvel. IntelliJ IDEA suporta Java, Groovy, Kotlin, Scala, Android, JavaScript, SQL e muitas outras linguagens e frameworks. Ele oferece um preenchimento de código instantâneo e inteligente, análise de código on-the-fly e ferramentas de refatoração confiáveis. Ferramentas de missão crítica, como sistemas integrados de controles de versão e uma ampla variedade de linguagens e estruturas suportadas, estão à mão - sem problemas de plugins. O IntelliJ IDEA Ultimate está disponível para uma avaliação gratuita de 30 dias. As opções de assinatura mensais e anuais estão disponíveis para empresas e usuários individuais. Saiba mais sobre https://www.jetbrains.com/idea/buy/"
+        ],
+        "categoria": [
+            "desenvolvimento",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "Webstorm",
+        "comando": [
+            "sudo snap install webstorm --classic",
+            "sudo snap install webstorm --candidate --classic",
+            "sudo snap install webstorm --beta --classic",
+            "sudo snap install webstorm --edge --classic"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2017/11/WebStorm_1282x.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2018/01/webstorm-on-linux.png"
+        ],
+        "descricao": [
+            "IDE poderoso para desenvolvimento moderno de JavaScript.",
+            "WebStorm é um poderoso IDE comercial para o desenvolvimento moderno de JavaScript. Independentemente de você estar usando JavaScript ou TypeScript, Angular, React ou Vue.js, o WebStorm fornece a você o melhor preenchimento de código, navegação, ferramentas de refatoração e análise de código on-the-fly. Você pode executar, depurar e testar seus aplicativos da Web, Node.js, React Native e Electron diretamente no IDE. Ferramentas como linters, gerenciador de tarefas e controle de versão são perfeitamente integrados e disponíveis para uso imediato. O WebStorm está disponível para uma avaliação gratuita de 30 dias. As opções de assinatura mensais e anuais estão disponíveis para empresas e usuários individuais. Saiba mais sobre https://www.jetbrains.com/webstorm/buy/"
+        ],
+        "categoria": [
+            "desenvolvimento",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "Instagraph",
+        "comando": [
+            "sudo snap install instagraph",
+            "sudo snap install instagraph --candidate",
+            "sudo snap install instagraph --beta",
+            "sudo snap install instagraph --edge"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2016/11/Instagraph.png"
+        ],
+        "descricao": [
+            "Cliente Instagram não oficial.",
+            "Cliente Instagram não oficial nativo"
+        ],
+        "categoria": [
+            "social",
+            "destaques"
+        ]
+    },
+    {
+        "nome": "Visual Studio Code",
+        "comando": [
+            "sudo snap install code --classic"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2018/02/Webp.net-resizeimage_1.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_1170/https://dashboard.snapcraft.io/site_media/appmedia/2017/09/home-screenshot-linux.png"
+        ],
+        "descricao": [
+            "Edição de código. Redefinido.",
+            "O Visual Studio Code é um editor de código-fonte leve, mas poderoso, que é executado em sua área de trabalho e está disponível para Linux, macOS e Windows. Ele vem com suporte embutido para JavaScript, TypeScript e Node.js e possui um rico ecossistema de extensões para outras linguagens (como C ++, C #, Java, Python, PHP, Go) e tempos de execução (como .NET e Unity). . Ao fazer o download e usar o Visual Studio Code, você concorda com os termos da licença ( https://code.visualstudio.com/License/ ) e com a declaração de privacidade ( https://privacy.microsoft.com/pt-br/privacystatement ). O Visual Studio Code envia automaticamente dados de telemetria e despejos de memória para nos ajudar a melhorar o produto. Se preferir não enviar esses dados, consulte https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-crash-reporting para saber como desativá-los. VSCode https://github.com/Microsoft/vscode"
+        ],
+        "video": "<iframe width=\"820\" height=\"461\" src=\"https://www.youtube.com/embed/Sdg0ef2PpBw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        "categoria": [
+            "Desenvolvimento",
+            "Destaques"
+        ]
+    },
+    {
+        "nome": "ElectronPlayer",
+        "comando": [
+            "sudo snap install  electronplayer"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2019/03/icon_a2HCDLg.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2019/04/ElectronPlayer.png"
+        ],
+        "descricao": [
+            "Um player de serviços de vídeo na Web baseado em elétron. Suportando Netflix, Youtube, Twitch, Floatplane e muito mais",
+            "Um player de serviços de vídeo na Web baseado em elétron. Suportando Netflix, Youtube, Twitch, Floatplane e muito mais. Este é o sucessor do [Netflix-Desktop] ( https://github.com/oscartbeaumont/Netflix-Desktop )."
+        ],
+        "video": "",
+        "categoria": [
+            "Entretenimento",
+            "Destaques"
+        ]
+    },
+    {
+        "nome": "Teeworlds",
+        "comando": [
+            "sudo snap install teeworlds-unofficial",
+            "sudo snap install teeworlds-unofficial --edge"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2019/03/teeworlds.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2019/03/screen1.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2019/03/screen2.png"
+        ],
+        "descricao": [
+            "Um atirador multijogador retro",
+            "Teeworlds é um jogo multiplayer online gratuito, disponível para todos os principais sistemas operacionais. Combate com até 16 jogadores numa variedade de modos de jogo, incluindo Team Deathmatch e Capture The Flag. Você pode até criar seus próprios mapas! Isso é feito a partir da fonte oficial do jogo, sem qualquer alteração, mas como eu não faço parte da comunidade de desenvolvedores, eu o divulguei como não oficial. Veja aqui o repo https://github.com/daviel/teeworlds-snap. Eu tentei fazer com que a comunidade oficial suportasse o snap aqui: https://github.com/teeworlds/teeworlds/pull/2083"
+        ],
+        "video": "",
+        "categoria": [
+            "Jogos",
+            "Destaques"
+        ]
+    },
+    {
+        "nome": "Telegram Desktop",
+        "comando": [
+            "sudo snap install telegram-desktop",
+            "sudo snap install telegram-desktop --beta",
+            "sudo snap install telegram-desktop --edge"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2018/02/icon256.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_860/https://dashboard.snapcraft.io/site_media/appmedia/2018/02/tg.png"
+        ],
+        "descricao": [
+            "Cliente de desktop oficial para o mensageiro Telegram",
+            "Mensagens instantâneas puras - simples, rápidas, seguras e sincronizadas em todos os seus dispositivos. Mais de 100 milhões de usuários ativos em dois anos e meio. FAST: O Telegram é o aplicativo de mensagens mais rápido do mercado, conectando pessoas por meio de uma rede distribuída exclusiva de data centers em todo o mundo. SYNCED: Você pode acessar suas mensagens de todos os seus dispositivos de uma só vez. Comece a digitar no seu telefone e termine a mensagem no seu tablet ou laptop. Nunca perca seus dados novamente. ILIMITADO: Você pode enviar mídia e arquivos, sem limites de tipo e tamanho. Todo o seu histórico de bate-papo não exigirá espaço em disco no dispositivo e será armazenado com segurança na nuvem do Telegram pelo tempo que você precisar. SEGURO: Fizemos da nossa missão fornecer a melhor segurança combinada com facilidade de uso. Tudo no Telegram, incluindo chats, grupos, mídia, etc., é criptografado usando uma combinação de criptografia AES simétrica de 256 bits, criptografia RSA de 2048 bits e troca de chave segura Diffie-Hellman. PODEROSO: Você pode criar bate-papos em grupo para até 100.000 membros, compartilhar vídeos grandes, documentos de qualquer tipo (.DOC, .MP3, .ZIP, etc.) e até mesmo configurar bots para tarefas específicas. É a ferramenta perfeita para hospedar comunidades online e coordenar o trabalho em equipe. CONFIÁVEL: Construído para entregar suas mensagens nos bytes mínimos possíveis, o Telegram é o sistema de mensagens mais confiável já feito. Funciona mesmo nas conexões móveis mais fracas. DIVERSÃO: O Telegram tem poderosas ferramentas de edição de fotos e vídeos e uma plataforma aberta de adesivos / GIF para atender a todas as suas necessidades expressivas. SIMPLES: Ao fornecer uma matriz de recursos sem precedentes, estamos tomando muito cuidado para manter a interface limpa. Com seu design minimalista, o Telegram é enxuto e fácil de usar. 100% GRATUITO E SEM ADS: O Telegram é gratuito e será sempre gratuito. Nós não vamos vender anúncios ou introduzir taxas de assinatura. PRIVADO: Levamos a sua privacidade a sério e nunca daremos aos terceiros acesso aos seus dados. Continuamos expandindo os limites do que você pode fazer com um aplicativo de mensagens. Não espere anos para mensageiros mais velhos alcançarem o Telegram - junte-se à revolução hoje."
+        ],
+        "video": "",
+        "categoria": [
+            "Produtividade",
+            "Social",
+            "Destaques"
+        ]
+    },
+    {
+        "nome": "Plex Media Server",
+        "comando": [
+            "sudo snap install plexmediaserver"
+        ],
+        "icon": [
+            "https://dashboard.snapcraft.io/site_media/appmedia/2018/10/plex-pms-icon.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_1170/https://dashboard.snapcraft.io/site_media/appmedia/2018/10/Plex-Devices.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_1170/https://dashboard.snapcraft.io/site_media/appmedia/2018/10/Plex-Lifestyle-iOS_wcMEJcN.jpg",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_1170/https://dashboard.snapcraft.io/site_media/appmedia/2018/10/Plex-Grid-Guide_UCrJV7W.png",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_1170/https://dashboard.snapcraft.io/site_media/appmedia/2018/10/Plex-News_Qm4FP7X.jpg",
+            "https://res.cloudinary.com/canonical/image/fetch/q_auto,f_auto,w_1170/https://dashboard.snapcraft.io/site_media/appmedia/2018/10/Plex-Photos_1W8fhH0.jpg"
+        ],
+        "descricao": [
+            "O Plex organiza magicamente suas bibliotecas de mídia e as transmite para qualquer dispositivo",
+            "O Plex organiza magicamente suas bibliotecas de mídia e as transmite para qualquer dispositivo - incluindo todas as suas bibliotecas de vídeos, músicas e fotos. Com um Plex Pass, um sintonizador suportado e uma antena digital, você também pode assistir e gravar TV de transmissão gratuita, incluindo as principais redes. Você também pode desfrutar de podcasts Plus Plex News - o feed de notícias de vídeo personalizado mais equilibrado e abrangente que existe por aí. Experimente o Plex GRÁTIS! Organize magicamente todas as suas mídias pessoais - fotos, músicas, filmes, programas, até TV DVR - e transmita-as para qualquer dispositivo em uma interface bonita e simples, e o Plex adiciona descrições detalhadas, ilustrações e outras informações relacionadas Podcasts estão aqui! Pesquise seus favoritos ou descubra novos por meio de recomendações personalizadas. Mais: pulo de 30 segundos, reprodução de velocidade variável, descoberta avançada e suporte completo ao estilo Plex para status de reprodução entre dispositivos (incluindo o On Deck, para que você possa voltar de onde parou em qualquer dispositivo) Receba notícias de vídeo personalizadas e confiáveis ​​de mais de 190 parceiros editoriais globais (e crescendo!), Incluindo CBS, Financial Times, Euronews e principais fontes de notícias locais para mais de 80% dos mercados nos EUA.  Cortar o cordão! Seja premium com o Plex Pass e use o Plex Live TV e o DVR para assistir e gravar gratuitamente a TV HD, como NBC, ABC, CBS e FOX, com qualquer antena e sintonizador digital compatível Aproveite os recursos gratuitos, como acesso remoto, compartilhamento, segurança e transmissão, veja sua mídia aprimorada com descrições detalhadas, ilustrações, classificações e muito mais Aproveite os recursos premium com uma assinatura do Plex Pass: DVR e TV ao vivo, upload da câmera, fotos Premium, sincronização com dispositivos móveis, controle dos pais, benefícios VIP e muito mais Quer usar o Plex em todos os seus dispositivos, a qualquer hora, em qualquer lugar? Visite https://www.plex.tv/ para mais informações."
+        ],
+        "video": "<iframe width=\"820\" height=\"461\" src=\"https://www.youtube.com/embed/Ldq38kkeIZQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+        "categoria": [
+            "Entretenimento",
+            "Destaques"
+        ]
+    }
+]
