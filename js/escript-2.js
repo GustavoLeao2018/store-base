@@ -97,6 +97,10 @@ angular.module("eagleStore").controller("eagleStoreCtrl", ($scope, $http) => {
         }
     };
 
+    $scope.chamar = (nome) => {
+        copiar('#'+nome);
+        
+    };
     
     
 });

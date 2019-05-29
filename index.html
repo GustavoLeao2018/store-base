@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.min.css" />
     <link rel="stylesheet" href="jquery-ui/jcarousel.basic.css" />
 
-    <script src="js/escript.js"></script>
     <script src="jquery-ui/external/jquery/jquery.js"></script>
     <script src="jquery-ui/jquery-ui.min.js"></script>
     <script src="jquery-ui/jquery.jcarousel.min.js"></script>
     <script src="js/escript-1.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/escript-2.js"></script>
+    <script src="js/escript.js"></script>
     
 </head>
 
@@ -186,9 +186,9 @@
                     </div>
                     <div class="conteudo" >
 
-                                                      
+                    <input hidden="true" type="text" id="{{remover(pacote.nome)+'-input'}}" name="{{remover(pacote.nome)+'-input'}}" value="{{pacote.comando[0]}}">                                  
                         
-                        <button class="direita" clipboard supported="supported" text="{{'#'+remover(pacote.nome)+'-input'}}" on-copied="success()" on-error="fail(err)">Instalar</button>
+                    <button class="direita"  ng-click="chamar(remover(pacote.nome)+'-input')">Instalar</button>
                     
 
                         <div class="jcarousel-wrapper">
@@ -223,6 +223,74 @@
         <section id="cadastro">
             <h3>Faça seu cadastro</h3>
             <p>Faça o seu cadastro para saber sobre novidades </p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" autofocus required>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="nome" required>
+                <label for="dtnascimento">Data de Nascimento:</label>
+                <input type="date" id="dtnascimento" name="dtnascimento" >
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <div class="radio-group">
+                    <label for="atividade">
+                        <input type="radio" name="desenvolvedor" id="desenvolvedor" value="novidades" checked>
+                            Não Desenvolvedor
+                        </label>
+                       
+                <label for="atividade">
+                        <input type="radio" name="desenvolvedor" id="desenvolvedor" value="novidades">
+                        Desenvolvedor
+                    </label> 
+                </div> 
+                <div class="checkbox-group">
+                <label for="estudante">
+                    <input type="checkbox" name="estudante" id="estudante">
+                    Estuda?
+                </label>
+                <br>
+                <select >
+                    <option value="">Selecione</option>
+                    <option value="tecnico">Técnico</option>
+                    <option value="faculdade">Ensino Superior</option>
+                    <option value="mestrado">Mestrado<r aoption>
+                    <option value="doutorado">Doutorado</option>
+                </select>
+            </div>
+                <div class="radio-group">
+                <label for="">O que deseja fazer?</label>
+                <br/>
+                <label for="atividade">
+                    <input type="radio" name="atividade" id="atividade" value="novidades" checked>
+                    Receber atualizações de novos aplicativos
+                </label>
+
+                <label for="atividade">
+                    <input type="radio" name="atividade" id="atividade" value="desenvolvedors">
+                    Desenvolver com os pacotes(snap/flatpak)
+                    </label>
+
+                <label for="atividade">
+                    <input type="radio" name="atividade" id="atividade" value="sem-mensagem">
+                    Não receber nada
+                </label>
+            </div>
+            <div class="checkbox-group">
+                <label for="site">
+                        <input type="checkbox" name="site" id="site">
+                        Possui site?
+            
+                </label>
+                <input type="url" name="site-url" id="site-url">
+            </div>
+                <input type="reset" name="resetar" id="resetar">
+                <input type="submit" name="enviar" id="enviar" value="Enviar">
+
+
+
+
+
+            </form>
         </section>
 
         <section id="desenvolvimento">
