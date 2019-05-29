@@ -20,7 +20,7 @@
     <script src="js/angular.min.js"></script>
     <script src="js/escript-2.js"></script>
     <script src="js/escript.js"></script>
-    
+
 </head>
 
 <body>
@@ -91,14 +91,15 @@
             <p>Veja os aplicativos em destaque, e escolha qual deseja instalar em sua distro:</p>
 
             <div class="linha">
-                <article class="coluna" ng-repeat="pacote in pacotes_snaps | filter: {categoria: 'destaques'} | orderBy: 'nome'">
+                <article class="coluna"
+                    ng-repeat="pacote in pacotes_snaps | filter: {categoria: 'destaques'} | orderBy: 'nome'">
                     <div class="titulo">
                         <h3 ng-bind="pacote.nome"></h3>
                     </div>
                     <div class="conteudo conteudo-destaques">
                         <a href="{{'#'+remover(pacote.nome)}}">
                             <figure>
-                                <img src="{{pacote.icon[0]}}" alt="{{pacote.nome}}"/>
+                                <img src="{{pacote.icon[0]}}" alt="{{pacote.nome}}" />
                             </figure>
                         </a>
                     </div>
@@ -108,14 +109,14 @@
                             Tag:
                             <span class="tag" ng-repeat="categoria in pacote.categoria">
                                 <a href="{{'#'+categoria+'-tag'}}">
-                                    {{categoria}}    
+                                    {{categoria}}
                                 </a>
                             </span>
                         </p>
                     </div>
                 </article>
-                
-                
+
+
 
             </div>
         </section>
@@ -124,9 +125,10 @@
             <h3>Loja de Aplicativos</h3>
             <p> Pesquise pelo aplicativo ou selecione a categoria : </p>
 
-            <br/>
-            <input type="search" class="pesquisa" name="pesquisar" id="pesquisar" ng-model="pesquisar" placeholder="Digite seu aplicativo aqui" />
-            <br/>
+            <br />
+            <input type="search" class="pesquisa" name="pesquisar" id="pesquisar" ng-model="pesquisar"
+                placeholder="Digite seu aplicativo aqui" />
+            <br />
 
             <ul class="pesquisar-lista">
                 <li>
@@ -180,22 +182,51 @@
             </ul>
 
             <div class="linha-pacote">
-                <article id="{{remover(pacote.nome)}}" class="coluna-pacote" ng-repeat="pacote in pacotes_snaps  | orderBy: 'nome' | filter: pesquisar | filter: {categoria: categoriaPesquisada}">
+                <article id="{{remover(pacote.nome)}}" class="coluna-pacote"
+                    ng-repeat="pacote in pacotes_snaps  | orderBy: 'nome' | filter: pesquisar | filter: {categoria: categoriaPesquisada}">
                     <div class="titulo">
                         <h3 ng-bind="pacote.nome">Título Padrão do Programa</h3>
                     </div>
-                    <div class="conteudo" >
+                    <div class="conteudo">
 
-                    <input hidden="true" type="text" id="{{remover(pacote.nome)+'-input'}}" name="{{remover(pacote.nome)+'-input'}}" value="{{pacote.comando[0]}}">                                  
-                        
-                    <button class="direita"  ng-click="chamar(remover(pacote.nome)+'-input')">Instalar</button>
+
+                        <label for="radiotipo">
+                            <input type="radio" ng-model="radiotipo" name="radiotipo" ng-value="'snap'" checked>
+                            Pacotes snap
+                        </label>
+
+                        <label for="radiotipo">
+                            <input type="radio" ng-model="radiotipo" name="radiotipo" ng-value="'flatpak'">
+                            Pacotes Flatpak
+                        </label>
+                      
+
+                        <div ng-if="radiotipo == 'flatpak'">
+                            <select ng-model="cmdflatpak">
+                                <option ng-repeat="flatpak in pacote.flatpak">{{flatpak}}</option>
+                            </select>
+                        </div>
+                        <div ng-if="radiotipo == 'snap'">
+                            <select ng-model="cmd">
+                            <option ng-repeat="comando in pacote.comando">{{comando}}</option>
+                            </select>
+                        </div>
+
                     
+                        <br />
+
+                        <input type="text" class="comando" id="{{remover(pacote.nome)+'-input'}}"
+                            name="{{remover(pacote.nome)+'-input'}}" value="{{cmd}}" disabled>
+
+                        <button class="direita" ng-click="chamar(remover(pacote.nome)+'-input')">Instalar</button>
+
 
                         <div class="jcarousel-wrapper">
                             <div class="jcarousel">
                                 <ul>
                                     <li ng-repeat="icone in pacote.icon">
-                                        <img ng-if="icone != pacote.icon[0]"  class="imagem" src="{{icone}}" alt="pacote.nome">
+                                        <img ng-if="icone != pacote.icon[0]" class="imagem" src="{{icone}}"
+                                            alt="pacote.nome">
                                     </li>
                                 </ul>
                             </div>
@@ -210,10 +241,10 @@
                         <p>
                             Tag:
                             <span class="tag" ng-repeat="categoria in pacote.categoria">
-                                    <a href="{{'#'+categoria+'-tag'}}">
-                                        {{categoria}}    
-                                    </a>
-                                </span>
+                                <a href="{{'#'+categoria+'-tag'}}">
+                                    {{categoria}}
+                                </a>
+                            </span>
                         </p>
                     </div>
                 </article>
@@ -229,60 +260,60 @@
                 <label for="sobrenome">Sobrenome:</label>
                 <input type="text" id="sobrenome" name="nome" required>
                 <label for="dtnascimento">Data de Nascimento:</label>
-                <input type="date" id="dtnascimento" name="dtnascimento" >
+                <input type="date" id="dtnascimento" name="dtnascimento">
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" required>
                 <div class="radio-group">
                     <label for="atividade">
                         <input type="radio" name="desenvolvedor" id="desenvolvedor" value="novidades" checked>
-                            Não Desenvolvedor
-                        </label>
-                       
-                <label for="atividade">
-                        <input type="radio" name="desenvolvedor" id="desenvolvedor" value="novidades">
-                        Desenvolvedor
-                    </label> 
-                </div> 
-                <div class="checkbox-group">
-                <label for="estudante">
-                    <input type="checkbox" name="estudante" id="estudante">
-                    Estuda?
-                </label>
-                <br>
-                <select >
-                    <option value="">Selecione</option>
-                    <option value="tecnico">Técnico</option>
-                    <option value="faculdade">Ensino Superior</option>
-                    <option value="mestrado">Mestrado<r aoption>
-                    <option value="doutorado">Doutorado</option>
-                </select>
-            </div>
-                <div class="radio-group">
-                <label for="">O que deseja fazer?</label>
-                <br/>
-                <label for="atividade">
-                    <input type="radio" name="atividade" id="atividade" value="novidades" checked>
-                    Receber atualizações de novos aplicativos
-                </label>
-
-                <label for="atividade">
-                    <input type="radio" name="atividade" id="atividade" value="desenvolvedors">
-                    Desenvolver com os pacotes(snap/flatpak)
+                        Não Desenvolvedor
                     </label>
 
-                <label for="atividade">
-                    <input type="radio" name="atividade" id="atividade" value="sem-mensagem">
-                    Não receber nada
-                </label>
-            </div>
-            <div class="checkbox-group">
-                <label for="site">
+                    <label for="atividade">
+                        <input type="radio" name="desenvolvedor" id="desenvolvedor" value="novidades">
+                        Desenvolvedor
+                    </label>
+                </div>
+                <div class="checkbox-group">
+                    <label for="estudante">
+                        <input type="checkbox" name="estudante" id="estudante">
+                        Estuda?
+                    </label>
+                    <br>
+                    <select>
+                        <option value="">Selecione</option>
+                        <option value="tecnico">Técnico</option>
+                        <option value="faculdade">Ensino Superior</option>
+                        <option value="mestrado">Mestrado<r aoption>
+                        <option value="doutorado">Doutorado</option>
+                    </select>
+                </div>
+                <div class="radio-group">
+                    <label for="">O que deseja fazer?</label>
+                    <br />
+                    <label for="atividade">
+                        <input type="radio" name="atividade" id="atividade" value="novidades" checked>
+                        Receber atualizações de novos aplicativos
+                    </label>
+
+                    <label for="atividade">
+                        <input type="radio" name="atividade" id="atividade" value="desenvolvedors">
+                        Desenvolver com os pacotes(snap/flatpak)
+                    </label>
+
+                    <label for="atividade">
+                        <input type="radio" name="atividade" id="atividade" value="sem-mensagem">
+                        Não receber nada
+                    </label>
+                </div>
+                <div class="checkbox-group">
+                    <label for="site">
                         <input type="checkbox" name="site" id="site">
                         Possui site?
-            
-                </label>
-                <input type="url" name="site-url" id="site-url">
-            </div>
+
+                    </label>
+                    <input type="url" name="site-url" id="site-url">
+                </div>
                 <input type="reset" name="resetar" id="resetar">
                 <input type="submit" name="enviar" id="enviar" value="Enviar">
 

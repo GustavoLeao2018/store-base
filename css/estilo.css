@@ -283,3 +283,11 @@ input[type=submit]:hover{
 }
 
 
+
+
+.comando {
+    margin: 10px;
+    border: none !important;
+    width: 90% !important;
+    opacity: 1 !important;
+}
