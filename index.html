@@ -191,35 +191,40 @@
 
 
                         <label for="radiotipo">
-                            <input type="radio" ng-model="radiotipo" name="radiotipo" ng-value="'snap'" checked>
+                            <input type="radio" ng-model="radiotipo" name="radiotipo" id="radiotipo" ng-value="'snap'" checked ng-checked="true">
                             Pacotes snap
                         </label>
 
                         <label for="radiotipo">
-                            <input type="radio" ng-model="radiotipo" name="radiotipo" ng-value="'flatpak'">
+                            <input type="radio" ng-model="radiotipo" name="radiotipo" id="radiotipo"  ng-value="'flatpak'">
                             Pacotes Flatpak
                         </label>
                       
 
-                        <div ng-if="radiotipo == 'flatpak'">
-                            <select ng-model="cmdflatpak">
+                        <div ng-show="radiotipo == 'flatpak'">
+                            <select ng-model="cmd">
                                 <option ng-repeat="flatpak in pacote.flatpak">{{flatpak}}</option>
                             </select>
                         </div>
-                        <div ng-if="radiotipo == 'snap'">
-                            <select ng-model="cmd">
-                            <option ng-repeat="comando in pacote.comando">{{comando}}</option>
+                        <div ng-show="radiotipo == 'snap'">
+                            <select ng-model="comandolinux">
+                                <option ng-repeat="comando in pacote.comando">{{comando}}</option>
                             </select>
                         </div>
 
                     
+                       
                         <br />
 
                         <input type="text" class="comando" id="{{remover(pacote.nome)+'-input'}}"
-                            name="{{remover(pacote.nome)+'-input'}}" value="{{cmd}}" disabled>
+                            name="{{remover(pacote.nome)+'-input'}}" value="{{comandolinux}}" disabled>
 
                         <button class="direita" ng-click="chamar(remover(pacote.nome)+'-input')">Instalar</button>
 
+                        <br/>
+                        <a class="direita" href="snap://{{pacote.nome}}">
+                            Abrir no Snap
+                        </a>
 
                         <div class="jcarousel-wrapper">
                             <div class="jcarousel">
@@ -256,35 +261,36 @@
             <p>Faça o seu cadastro para saber sobre novidades </p>
             <form>
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" autofocus required>
+                <input type="text" name="nome" id="nome" autofocus required ng-model="usuario.nome">
                 <label for="sobrenome">Sobrenome:</label>
-                <input type="text" id="sobrenome" name="nome" required>
+                <input type="text" id="sobrenome" name="nome" required ng-model="usuario.sobrenome">
                 <label for="dtnascimento">Data de Nascimento:</label>
-                <input type="date" id="dtnascimento" name="dtnascimento">
+                <input type="date" id="dtnascimento" name="dtnascimento" ng-model="usuario.data">
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required ng-model="usuario.email">
                 <div class="radio-group">
-                    <label for="atividade">
-                        <input type="radio" name="desenvolvedor" id="desenvolvedor" value="novidades" checked>
+                    <label for="desenvolvedor">
+                        <input type="radio" name="desenvolvedor" id="desenvolvedor" value="Não Desenvolvedor" checked ng-model="usuario.desenvolvedor" ng-checked="true">
                         Não Desenvolvedor
                     </label>
 
-                    <label for="atividade">
-                        <input type="radio" name="desenvolvedor" id="desenvolvedor" value="novidades">
+                    <label for="desenvolvedor">
+                        <input type="radio" name="desenvolvedor" id="desenvolvedor" value="Desenvolvedor" ng-model="usuario.desenvolvedor">
                         Desenvolvedor
                     </label>
                 </div>
                 <div class="checkbox-group">
-                    <label for="estudante">
-                        <input type="checkbox" name="estudante" id="estudante">
+                    <label for="estudante" >
+                        <input type="checkbox" ng-model="usuario.estudante" name="estudante" id="estudante">
                         Estuda?
                     </label>
+                    
                     <br>
-                    <select>
+                    <select ng-disabled="!usuario.estudante" ng-model="usuario.escolaridade">
                         <option value="">Selecione</option>
                         <option value="tecnico">Técnico</option>
                         <option value="faculdade">Ensino Superior</option>
-                        <option value="mestrado">Mestrado<r aoption>
+                        <option value="mestrado">Mestrado</option>
                         <option value="doutorado">Doutorado</option>
                     </select>
                 </div>
@@ -292,30 +298,31 @@
                     <label for="">O que deseja fazer?</label>
                     <br />
                     <label for="atividade">
-                        <input type="radio" name="atividade" id="atividade" value="novidades" checked>
+                        <input type="radio" name="atividade" id="atividade" value="novidades" checked ng-checked="true" ng-model="usuario.atividades">
                         Receber atualizações de novos aplicativos
                     </label>
 
                     <label for="atividade">
-                        <input type="radio" name="atividade" id="atividade" value="desenvolvedors">
+                        <input type="radio" name="atividade" id="atividade" value="desenvolvedor" ng-model="usuario.atividades">
                         Desenvolver com os pacotes(snap/flatpak)
                     </label>
 
                     <label for="atividade">
-                        <input type="radio" name="atividade" id="atividade" value="sem-mensagem">
+                        <input type="radio" name="atividade" id="atividade" value="sem-mensagem" ng-model="usuario.atividades">
                         Não receber nada
                     </label>
                 </div>
                 <div class="checkbox-group">
                     <label for="site">
-                        <input type="checkbox" name="site" id="site">
+                        <input type="checkbox" ng-model="url" name="site" id="site" ng-model="usuario.site">
                         Possui site?
 
                     </label>
-                    <input type="url" name="site-url" id="site-url">
+                    <input type="url" ng-disabled="!url" name="site-url" id="site-url" ng-model="usuario.url">
                 </div>
-                <input type="reset" name="resetar" id="resetar">
-                <input type="submit" name="enviar" id="enviar" value="Enviar">
+
+                <input type="submit" name="enviar" id="enviar" value="Enviar" ng-click="salvar_usuario()">
+                <input type="reset" name="resetar" id="resetar" value="Limpar">
 
 
 

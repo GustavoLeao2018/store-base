@@ -98,9 +98,12 @@ angular.module("eagleStore").controller("eagleStoreCtrl", ($scope, $http) => {
     };
 
     $scope.chamar = (nome) => {
-        copiar('#'+nome);
-        
+        copiar(nome);
     };
     
-    
+    $scope.salvar_usuario = (usuario) => {
+        console.log(usuario);
+        $http.post('js/usuarios.json', usuario);
+        console.log($http.get('js/usuarios.json').then((data) => { return data; }));
+    };
 });

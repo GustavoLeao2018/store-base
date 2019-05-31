@@ -18,7 +18,7 @@ Cinza claro     | #D3D3D3   | #000      |
 /* Estilização de texto */
 p { text-align: justify; text-indent: 25px; color: #000; text-shadow: 2px 2px 2px #000; }
 h1, h2, h3, h4, h5, h6 { text-align: center; color: #000; text-shadow: 2px 2px 2px #000; }
-a { text-decoration: none; color: darkred; text-shadow: 2px 2px 2px #000; cursor: default; }
+a { text-decoration: none; color: darkred; text-shadow: 1px 1px 1px #000; cursor: default; }
 a:hover { opacity: 0.7; text-decoration: underline; }
 
 
@@ -57,6 +57,7 @@ nav ul{
     flex-wrap: wrap;
 }
 nav ul li a{
+    text-shadow: 2px 2px 2px #000;
     margin-left: 10px; 
     margin-right: 10px;
     color: #fff;
@@ -166,7 +167,7 @@ ul {
     list-style: none;
 }
 ul li a{
-    color: #000;
+    color: #117934;
 }
 .imagem {
     max-width: 600px;

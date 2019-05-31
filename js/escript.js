@@ -27,9 +27,10 @@ function mostrar(titulo){
 
 
 function copiar(texto) {
-    var copyText = document.querySelector(texto);
+    let copyText = document.getElementById(texto);
     copyText.select(); 
-    document.execCommand("copy");
+    let resultado = document.execCommand("copy");
+    console.log(resultado ? 'successful' : 'unsuccessful');
     console.log(copyText.value);
 }
 
